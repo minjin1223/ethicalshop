@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_flipper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	<!--  Layout 1 for 1st Screen 
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/es_bg3_750_android"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    android:isScrollContainer="true"
+	    android:orientation="vertical"
+	    android:scrollbars="vertical" >
+		<Button 
+		    android:id="@+id/nextbutn1"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="next"
+			/>
+	</LinearLayout>-->
+	<include
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    layout="@layout/shoplist_home"
+	    />
+	
+	<!--  Layout 2 for 2nd Screen 
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/es_bg3_750_android"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    android:isScrollContainer="true"
+	    android:orientation="vertical"
+	    android:scrollbars="vertical" >
+		<Button 
+		    android:id="@+id/nextbutn2"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="next"
+			/>
+	</LinearLayout>-->
+	<include
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    layout="@layout/select_shop"
+    />
+	
+	<LinearLayout
+	    android:id="@+id/linearLayout1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/es_bg3_750_android"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    android:isScrollContainer="true"
+	    android:orientation="vertical"
+	    android:scrollbars="vertical" >
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#7d5f49"
+	        android:orientation="vertical" >
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="37dip"
+	            android:layout_margin="3dip"
+	            android:background="#7d5f49"
+	            android:orientation="horizontal" >
+	
+	            <LinearLayout
+	                android:layout_width="265dip"
+	                android:layout_height="35dip" >
+					<!--  
+	                <TableLayout
+	                    android:layout_width="265dip"
+	                    android:layout_height="35dip"
+	                    android:background="@drawable/roundedcorner"
+	                    android:orientation="vertical" >
+					-->
+	                    <EditText
+	                        android:id="@+id/input"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="35dip"
+	                        android:background="@drawable/roundedcorner"
+	                        android:gravity="center_vertical"
+	                        android:hint="검색"
+	                        android:paddingLeft="18dip"
+	                        android:paddingRight="18dip"
+	                        android:singleLine="true" />
+	              <!--  </TableLayout>-->
+	            </LinearLayout>
+	
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="35dip"
+	                android:layout_marginLeft="13dip"
+	                android:layout_marginTop="1dip"
+	                android:gravity="right" >
+	<!--  
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="right"
+	                    android:gravity="right" >
+	
+	                    <TableLayout
+	                        android:layout_width="32dip"
+	                        android:layout_height="32dip"
+	                        android:background="@drawable/roundedmapbutton" >
+	-->
+	                        <ImageButton
+	                            android:id="@+id/mapbutton"
+	                            android:layout_width="32dip"
+	                            android:layout_height="32dip"
+	                            android:background="@drawable/es_shoptable_map"
+	                            android:text="MAP" />
+	          <!--            </TableLayout>
+	                </LinearLayout>-->
+	            </LinearLayout>
+	
+	        </LinearLayout>
+	    </LinearLayout>
+	
+	    <ListView
+	        android:id="@+id/Cusom_List"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" >
+	    </ListView>
+	
+	</LinearLayout>
+</ViewFlipper>

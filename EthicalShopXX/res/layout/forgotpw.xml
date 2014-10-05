@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/es_bg_3"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:background="#563832"
+            android:gravity="center"
+            android:text="비밀번호 찾기"
+            android:textColor="#ddffffff"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="280dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dip"
+        android:orientation="horizontal" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/roundedcorner"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/text_id"
+                android:layout_width="280dip"
+                android:layout_height="55dip"
+                android:background="@drawable/roundedcorner"
+                android:hint="가입한 아이디를 입력하세요"
+                android:paddingLeft="18dip"
+                android:paddingRight="18dip"
+                android:singleLine="true"
+                android:textColor="#563832"
+                android:textSize="18sp" >
+            </EditText>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="90dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dip"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/find_btn"
+            android:layout_width="90dip"
+            android:layout_height="52dip"
+            android:background="@drawable/es_changenick_ok" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#563832"
+        android:gravity="center"
+        android:text="회원가입"
+        android:textColor="#ddffffff"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="200dip"
+            android:layout_height="100dip"
+            android:orientation="vertical"
+            />
+        
+        <LinearLayout
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal" >
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="230dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/roundedcorner"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/reg_nick"
+                    android:layout_width="230dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/roundedcorner"
+                    android:hint="student-number"
+                    android:paddingLeft="18dip"
+                    android:paddingRight="18dip"
+                    android:singleLine="true"
+                    android:textSize="16sp" >
+                </EditText>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="230dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/roundedcorner"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/reg_email"
+                    android:layout_width="230dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/roundedcorner"
+                    android:hint="e-mail"
+                    android:paddingLeft="18dip"
+                    android:paddingRight="18dip"
+                    android:singleLine="true"
+                    android:textSize="16sp" >
+                </EditText>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="230dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/roundedcorner"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/reg_pass"
+                    android:layout_width="230dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/roundedcorner"
+                    android:hint="password"
+                    android:paddingLeft="18dip"
+                    android:paddingRight="18dip"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textSize="16sp" >
+                </EditText>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="230dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/roundedcorner"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/reg_pass2"
+                    android:layout_width="230dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/roundedcorner"
+                    android:hint="password again"
+                    android:paddingLeft="18dip"
+                    android:paddingRight="18dip"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textSize="16sp" >
+                </EditText>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="110dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dip"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/regbutton"
+                android:layout_width="110dip"
+                android:layout_height="55dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/es_register" 
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:overScrollMode="never" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/es_signin_bg_750_3"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="#563832"
+            android:gravity="center"
+            android:text="로그인"
+            android:textColor="#ddffffff"
+            android:textSize="25sp" />
+        <!-- android:background="@drawable/es_signin_bg_1zz" -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:layout_width="200dip"
+                        android:layout_height="126dip"
+                        android:background="@drawable/es_signin_boy_2" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundedcorner"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/textID"
+                        android:layout_width="200dip"
+                        android:layout_height="30dip"
+                        android:background="@drawable/roundedcorner"
+                        android:hint="student number"
+                        android:paddingLeft="18dip"
+                        android:paddingRight="18dip"
+                        android:singleLine="true"
+                        android:textSize="16sp" >
+                    </EditText>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundedcorner"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/textPW"
+                        android:layout_width="200dip"
+                        android:layout_height="30dip"
+                        android:background="@drawable/roundedcorner"
+                        android:hint="password"
+                        android:paddingLeft="18dip"
+                        android:paddingRight="18dip"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:textSize="16sp" >
+                    </EditText>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dip"
+                android:layout_margin="10dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/auto_check"
+                    android:layout_width="140dip"
+                    android:layout_height="36dip"
+                    android:gravity="center_vertical"
+                    android:text="   자동 로그인 "
+                    android:textColor="#563832"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/loginbutton"
+                    android:layout_width="50dip"
+                    android:layout_height="57dip"
+                    android:background="@drawable/es_loading_login"
+                    android:text="LOGIN" />
+
+                <ImageButton
+                    android:id="@+id/lostbutton"
+                    android:layout_width="50dip"
+                    android:layout_height="57dip"
+                    android:layout_marginLeft="15dip"
+                    android:background="@drawable/es_loading_look"
+                    android:text="Lost ID/PW" />
+                
+                 <ImageButton
+                    android:id="@+id/forgotpwbutton"
+                    android:layout_width="50dip"
+                    android:layout_height="57dip"
+                    android:layout_marginLeft="15dip"
+                    android:background="@drawable/es_loading_look"
+                    android:text="FIND PW" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="47dip"
+                    android:layout_marginLeft="18dip"
+                    android:layout_marginRight="18dip"
+                    android:layout_marginTop="10dip"
+                    android:orientation="vertical" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/roundedcorner"
+                        android:orientation="vertical" >
+
+                        <ListView
+                            android:id="@+id/list_register2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:isScrollContainer="false"
+                            android:listSelector="#00000000"
+                            android:overScrollMode="never" >
+                        </ListView>
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

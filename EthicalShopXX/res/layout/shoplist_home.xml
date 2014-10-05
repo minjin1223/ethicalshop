@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  es_home_bg-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/es_home_bg"  
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:isScrollContainer="true"
+    android:scrollbars="vertical" >
+
+    <ImageButton
+        android:id="@+id/yangdukBtn"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="164dp"
+        android:layout_marginLeft="74dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/es_home_btn_yangduk" />
+
+    <ImageButton
+        android:id="@+id/hospitalBtn"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_above="@+id/yangdukBtn"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="21dp"
+        android:layout_marginRight="32dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/es_home_btn_hospital" />
+
+    <ImageButton
+        android:id="@+id/extraBtn"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="54dp"
+        android:layout_marginLeft="74dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/es_home_btn_extra" />
+
+    <ImageButton
+        android:id="@+id/yukguriBtn"
+        android:layout_width="90dip"
+        android:layout_height="80dip"
+        android:layout_alignBottom="@+id/extraBtn"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="42dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/es_home_btn_yukguri" />
+
+    <ImageButton
+        android:id="@+id/terminalBtn"
+        android:layout_width="90dip"
+        android:layout_height="80dip"
+        android:layout_alignBottom="@+id/hospitalBtn"
+        android:layout_alignLeft="@+id/yangdukBtn"
+        android:layout_marginBottom="56dp"
+        android:layout_marginLeft="21dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/es_home_btn_terminal" />
+
+</RelativeLayout>

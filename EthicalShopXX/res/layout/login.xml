@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/es_signin_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="#563832"
+            android:text="로그인"
+            android:gravity="center"
+            android:textColor="#ddffffff"
+            android:textSize="25sp" />
+        <!-- android:background="@drawable/es_signin_bg_1zz" -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical" 
+            >
+
+            <LinearLayout
+                android:layout_width="200dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dip"
+                android:orientation="horizontal" 
+                />
+
+
+            <LinearLayout
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundedcorner"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/textID"
+                        android:layout_width="200dip"
+                        android:layout_height="30dip"
+                        android:background="@drawable/roundedcorner"
+                        android:hint="학번"
+                        android:paddingLeft="18dip"
+                        android:paddingRight="18dip"
+                        android:singleLine="true"
+                        android:textSize="16sp" >
+                    </EditText>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundedcorner"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/textPW"
+                        android:layout_width="200dip"
+                        android:layout_height="30dip"
+                        android:background="@drawable/roundedcorner"
+                        android:hint="비밀번호"
+                        android:paddingLeft="18dip"
+                        android:paddingRight="18dip"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:textSize="16sp" >
+                    </EditText>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dip"
+                android:layout_height="38dip"
+                android:layout_margin="10dip"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/auto_check"
+                    android:layout_width="150dip"
+                    android:layout_height="32dip"
+                    android:text="   자동 로그인 "
+                    android:textColor="#563832"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="180dip"
+                android:layout_height="40dip"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/loginbutton"
+                    android:layout_width="80dip"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/es_loading_login"
+                    />
+
+                <LinearLayout 
+                    android:layout_width="20dip"
+                    android:layout_height="match_parent"
+                    />
+                
+                <ImageButton
+                    android:id="@+id/lostbutton"
+                    android:layout_width="80dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="@drawable/es_loading_findpw"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="47dip"
+                    android:layout_marginLeft="18dip"
+                    android:layout_marginRight="18dip"
+                    android:layout_marginTop="10dip"
+                    android:orientation="vertical" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/roundedcorner"
+                        android:orientation="vertical" >
+
+                        <ListView
+                            android:id="@+id/list_register2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:isScrollContainer="false"
+                            android:listSelector="#00000000"
+                            android:overScrollMode="never" >
+                        </ListView>
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

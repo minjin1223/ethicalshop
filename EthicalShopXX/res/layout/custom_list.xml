@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/es_shoptable_bgx"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:id="@+id/image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/shopimage"
+            android:layout_width="100dip"
+            android:layout_height="78dip"
+            android:background="@drawable/roundedcorner"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/image_layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image_layout"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="3dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/group_btn_hgu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group_btn_hgu2" 
+            />
+         <ImageView
+            android:id="@+id/group_btn_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_food" 
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image_layout"
+        android:layout_marginLeft="3dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/custom_list_title_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Title"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/custom_list_title_main"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/image_layout2"
+        android:layout_marginLeft="3dp"
+        android:text="Main Title"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:textStyle="bold" 
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_alignTop="@+id/image_layout"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/callbtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="3dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_call3" />
+
+        <ImageButton
+            android:id="@+id/mapbtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="3dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_map3" />
+    </LinearLayout>
+
+</RelativeLayout>
